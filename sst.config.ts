@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { SSTConfig } from 'sst';
 import { API } from './stacks/MyStack';
 

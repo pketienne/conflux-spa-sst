@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { ApiHandler } from 'sst/node/api';
 import { Todo } from '@conflux-spa-sst/core/todo';
 

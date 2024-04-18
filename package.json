@@ -11,7 +11,8 @@
 		"lint": "eslint . --ext .ts",
 		"remove": "sst remove",
 		"console": "sst console",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"prepare": "husky"
 	},
 	"devDependencies": {
 		"@tsconfig/node18": "^18.2.4",
@@ -20,6 +21,7 @@
 		"aws-cdk-lib": "2.132.1",
 		"constructs": "10.3.0",
 		"eslint": "8",
+		"husky": "^9.0.11",
 		"prettier": "^3.2.5",
 		"sst": "^2.41.4",
 		"typescript": "^5.4.5"
