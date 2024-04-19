@@ -1,15 +1,16 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+import { ApiStack } from './stacks/ApiStack';
 import { SSTConfig } from 'sst';
-import { API } from './stacks/MyStack';
+import { StorageStack } from './stacks/StorageStack';
 
 export default {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	config(_input) {
 		return {
-			name: 'conflux-spa-sst',
+			name: 'notes',
 			region: 'us-east-1',
 		};
 	},
 	stacks(app) {
-		app.stack(API);
+		app.stack(StorageStack).stack(ApiStack);
 	},
 } satisfies SSTConfig;
