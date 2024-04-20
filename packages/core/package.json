@@ -7,11 +7,14 @@
 		"typecheck": "tsc -noEmit"
 	},
 	"devDependencies": {
+		"@types/aws-lambda": "^8.10.137",
 		"vitest": "^1.5.0",
 		"@types/node": "^20.12.7",
 		"sst": "^2.41.4"
 	},
 	"dependencies": {
+		"aws-lambda": "^1.0.7",
+		"aws-sdk": "^2.1602.0",
 		"zod": "^3.22.4"
 	}
 }
