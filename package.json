@@ -4,15 +4,16 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "sst dev",
 		"build": "sst build",
+		"console": "sst console",
 		"deploy": "sst deploy",
+		"dev": "sst dev",
 		"format": "prettier --write .",
 		"lint": "eslint . --ext .ts",
+		"prepare": "husky",
 		"remove": "sst remove",
-		"console": "sst console",
-		"typecheck": "tsc --noEmit",
-		"prepare": "husky"
+		"test": "sst bind vitest run",
+		"typecheck": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@tsconfig/node18": "^18.2.4",
@@ -24,7 +25,8 @@
 		"husky": "^9.0.11",
 		"prettier": "^3.2.5",
 		"sst": "^2.41.4",
-		"typescript": "^5.4.5"
+		"typescript": "^5.4.5",
+		"vitest": "^1.5.0"
 	},
 	"workspaces": [
 		"packages/*"
