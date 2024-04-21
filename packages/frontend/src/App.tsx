@@ -6,14 +6,17 @@ import './App.css';
 import { AppContext, AppContextType } from './lib/contextLib';
 import { Auth } from 'aws-amplify';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
+	const nav = useNavigate();
 	const [isAuthenticating, setIsAuthenticating] = useState(true);
 	const [isAuthenticated, userHasAuthenticated] = useState(false);
 
 	async function handleLogout() {
 		await Auth.signOut();
 		userHasAuthenticated(false);
+		nav('/login');
 	}
 
 	useEffect(() => {
