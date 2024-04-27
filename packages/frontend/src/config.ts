@@ -19,7 +19,7 @@ const config = {
 	},
 
 	// Stripe config
-	STRIPE_KEY: '<YOUR_STRIPE_PUBLIC_KEY>',
+	STRIPE_KEY: 'pk_test_51P7UunRtpAKj6U3dDIHAS1H84bYKHK4MKXONu22IYItFeMuQmVAr3Hxjg2ojTjySFaRMhJY7oSO5OTHv3FVevsMg00liC5xApb',
 };
 
 export default config;

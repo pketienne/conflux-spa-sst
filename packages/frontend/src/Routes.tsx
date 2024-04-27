@@ -14,9 +14,9 @@ export default function Links() {
 			<Route path="*" element={<NotFound />} />
 			<Route path="/login" element={<Login />} />
 			<Route path="/signup" element={<Signup />} />
+			<Route path="/settings" element={<Settings />} />
 			<Route path="/notes/new" element={<NewNote />} />
 			<Route path="/notes/:id" element={<Notes />} />
-			<Route path="/settings" element={<Settings />} />
 		</Routes>
 	);
 }

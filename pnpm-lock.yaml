@@ -68,6 +68,9 @@ importers:
 
  packages/frontend:
   dependencies:
+   '@stripe/react-stripe-js':
+    specifier: ^2.7.0
+    version: 2.7.0(@stripe/stripe-js@3.3.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
    '@stripe/stripe-js':
     specifier: ^3.3.0
     version: 3.3.0
@@ -2672,6 +2675,13 @@ packages:
  '@smithy/util-waiter@2.2.0':
   resolution: { integrity: sha512-IHk53BVw6MPMi2Gsn+hCng8rFA3ZmR3Rk7GllxDUW9qFJl/hiSvskn7XldkECapQVkIg/1dHpMAxI9xSTaLLSA== }
   engines: { node: '>=14.0.0' }
+
+ '@stripe/react-stripe-js@2.7.0':
+  resolution: { integrity: sha512-kTkIZl2ZleBuDR9c6fDy/s4m33llII8a5al6BDAMSTrfVq/4gSZv3RBO5KS/xvnxS+fDapJ3bKvjD8Lqj+AKdQ== }
+  peerDependencies:
+   '@stripe/stripe-js': ^1.44.1 || ^2.0.0 || ^3.0.0
+   react: ^16.8.0 || ^17.0.0 || ^18.0.0
+   react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
 
  '@stripe/stripe-js@3.3.0':
   resolution: { integrity: sha512-dUgAsko9KoYC1U2TIawHzbkQJzPoApxCc1Qf6/j318d1ArViyh6ROHVYTxnU3RlOQL/utUD9I4/QoyiCowsgrw== }
@@ -10529,6 +10539,13 @@ snapshots:
    '@smithy/abort-controller': 2.2.0
    '@smithy/types': 2.12.0
    tslib: 2.6.2
+
+ '@stripe/react-stripe-js@2.7.0(@stripe/stripe-js@3.3.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  dependencies:
+   '@stripe/stripe-js': 3.3.0
+   prop-types: 15.8.1
+   react: 18.2.0
+   react-dom: 18.2.0(react@18.2.0)
 
  '@stripe/stripe-js@3.3.0': {}
 
