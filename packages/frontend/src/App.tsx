@@ -1,4 +1,4 @@
-import Routes from './Routes.tsx';
+import Routes from './Routes';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { LinkContainer } from 'react-router-bootstrap';
