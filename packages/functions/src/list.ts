@@ -1,6 +1,6 @@
 import { Table } from 'sst/node/table';
-import handler from '@conflux-spa-sst/core/handler';
-import dynamoDb from '@conflux-spa-sst/core/dynamodb';
+import handler from '../../core/src/handler';
+import dynamoDb from '../../core/src/dynamodb';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const main = handler(async (event) => {

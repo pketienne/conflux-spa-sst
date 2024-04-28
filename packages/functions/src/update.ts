@@ -1,6 +1,6 @@
 import { Table } from 'sst/node/table';
-import handler from '@conflux-spa-sst/core/handler';
-import dynamoDb from '@conflux-spa-sst/core/dynamodb';
+import handler from '../../core/src/handler';
+import dynamoDb from '../../core/src/dynamodb';
 
 export const main = handler(async (event) => {
 	const data = JSON.parse(event.body || '{}');
